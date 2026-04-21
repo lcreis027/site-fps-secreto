@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPS SECRETO - Otimize Seu Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'gaming': ['Orbitron', 'sans-serif'],
+                    },
+                    colors: {
+                        'neon': '#39FF14',
+                        'dark': '#0a0a0f',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0f;
+            background-image: 
+                linear-gradient(rgba(57, 255, 20, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(57, 255, 20, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .glow {
+            box-shadow: 0 0 15px #39FF14, 0 0 30px rgba(57, 255, 20, 0.5);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #39FF14;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="text-white font-gaming">
+
+    <!-- HEADER -->
+    <header class="border-b border-neon/30 bg-black/70 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-3xl md:text-4xl font-black text-neon tracking-widest">FPS SECRETO</h1>
+            <nav class="space-x-4 text-sm">
+                <a href="#inicio" class="hover:text-neon transition-colors">INÍCIO</a>
+                <a href="#tutoriais" class="hover:text-neon transition-colors">TUTORIAIS</a>
+                <a href="#downloads" class="hover:text-neon transition-colors">DOWNLOADS</a>
+                <a href="#contato" class="hover:text-neon transition-colors">CONTATO</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main id="inicio" class="max-w-6xl mx-auto px-4 py-12">
+        <section class="text-center mb-16">
+            <h2 class="text-5xl md:text-7xl font-black mb-4">
+                <span class="text-white">AUMENTE SEU</span> 
+                <span class="text-neon animate-pulse">FPS</span>
+            </h2>
+            <p class="text-gray-400 text-lg mb-8">Os melhores truques e otimizações para deixar seu PC pronto para a vitória.</p>
+            <button class="bg-neon text-dark font-bold px-8 py-3 rounded-lg text-xl hover:scale-105 transition-transform glow">
+                COMEÇAR AGORA
+            </button>
+        </section>
+
+        <!-- PASSO A PASSO CARDS -->
+        <section id="tutoriais" class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-black/60 border border-neon/30 rounded-xl p-6 hover:border-neon transition-all">
+                <h3 class="text-neon text-2xl font-bold mb-3">01. LIMPEZA</h3>
+                <p class="text-gray-400 text-sm">Remova arquivos temporários e lixos que deixam seu PC lento.</p>
+            </div>
+            <div class="bg-black/60 border border-neon/30 rounded-xl p-6 hover:border-neon transition-all">
+                <h3 class="text-neon text-2xl font-bold mb-3">02. REDE</h3>
+                <p class="text-gray-400 text-sm">Diminua o ping e estabilize sua conexão para não travar.</p>
+            </div>
+            <div class="bg-black/60 border border-neon/30 rounded-xl p-6 hover:border-neon transition-all">
+                <h3 class="text-neon text-2xl font-bold mb-3">03. DESEMPENHO</h3>
+                <p class="text-gray-400 text-sm">Configurações avançadas do Windows para rodar tudo no máximo.</p>
+            </div>
+        </section>
+
+        <!-- DOWNLOADS -->
+        <section id="downloads" class="bg-gradient-to-r from-black to-dark border border-neon/50 rounded-2xl p-8 md:p-12">
+            <h2 class="text-4xl font-bold text-center mb-8">ARQUIVOS <span class="text-neon">SECRETOS</span></h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- SEU LINK -->
+                <a href="https://drive.google.com/file/d/1xB5FC0lKWx5DpNQFeYC2NBpt0bYZNOc_/view?usp=drivesdk" target="_blank" class="bg-white/10 hover:bg-neon hover:text-black transition-all px-6 py-3 rounded-lg font-bold border border-white/20 hover:border-neon">
+                    📁 OTIMIZAÇÃO INTEL HD
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contato" class="border-t border-neon/30 mt-16 py-6 text-center text-gray-500">
+        <p>&copy; 2025 FPS SECRETO - Todos os direitos reservados.</p>
+        <p class="text-xs mt-2">Design criado por Dola 🤖</p>
+    </footer>
+
+</body>
+</html>
